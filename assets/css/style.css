@@ -19,7 +19,7 @@ header>div{
 .header-right input{
     background-color: #0061ffFF;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     font-size: 1.25rem;
     border: none;
 }
@@ -30,9 +30,12 @@ header>div{
 /* #endregion header */
 
 /* #region main */
+
+/* #region jumbotron */
 main{
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .jumbotron{
@@ -43,7 +46,7 @@ main{
     align-items: center;
 }
 
-div.container{
+.container.jumbotron{
     width: 70%;
     display: flex;
     flex-direction: row;
@@ -51,13 +54,13 @@ div.container{
     align-items: flex-start;
 }
 
-div.megatitle{
+.megatitle{
     font-size: 5rem;
     width: 70%;
     line-height: 10rem;
 }
 
-div.textbox{
+.textbox.jumbotron{
     width: 30%;
     font-size: 2rem;
     line-height: 3rem;
@@ -80,4 +83,61 @@ div.textbox{
 .jumbotron i{
     font-size: 6rem;
     margin-top: 10rem;
+}
+
+/* #endregion jumbotron */
+
+.container.plan_business{
+    margin-top: 20rem;
+    width: 60%;
+    align-self: center;
+}
+
+nav.plans{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10rem;
+    margin-top: 6rem;
+}
+
+.plans .column{
+    width: 28%;
+}
+
+.plans_head{
+    height: 3rem;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.spot_enterprice_head{
+    width: 100%;
+    text-align: center;
+}
+
+/* #region DEBUG */
+.debug .plan_business{
+    background-color: yellow;
+    height: 5%;
+}
+
+.debug nav.plans{
+    height: 2000px;
+}
+
+.debug nav.plans div{
+    flex-basis: 1800px;
+    background-color: cadetblue;
+    border: 1px solid black;
+}
+
+.debug .spot.enterprise{
+    height: 500px;
+    border: 1px solid black;
+}
+
+.debug .spot_enterprice_head{
+    height: 4rem;
+    border: 1px solid black;
 }
