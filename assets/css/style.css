@@ -88,10 +88,9 @@ main{
     font-size: 6rem;
     margin-top: 10rem;
 }
-
-
 /* #endregion jumbotron */
 
+/* <!-- #region container plan_business --> */
 .container.plan_business{
     margin-top: 20rem;
     width: 60%;
@@ -120,11 +119,12 @@ nav.plans{
     width: 100%;
     text-align: center;
 }
+/* <!-- #endregion container plan_business --> */
 
+/* <!-- #region container_partnership --> */
 .container.partnership{
     width: 60%;
     display: flex;
-    /* justify-content: center; */
     align-self: center;
     margin-top: 20rem;
 
@@ -138,7 +138,9 @@ nav.plans{
         flex-grow: 2;
     }
 }
+/* <!-- #endregion container_partnership --> */
 
+/* <!-- #region containter_dropbox_business --> */
 .container.dropbox_business{
     width: 60%;
     align-self: center;
@@ -157,7 +159,9 @@ nav.plans{
         width: 30%;
     }
 }
+/* <!-- #endregion containter_dropbox_business --> */
 
+/* !-- #region containter_team_logo_overture --> */
 .team_logo_overture{
     width: 60%;
     display: flex;
@@ -178,7 +182,9 @@ nav.plans{
         background-color: yellow;
     }
 }
+/* !-- #endregion containter_team_logo_overture --> */
 
+/* <!-- #region containter_team_logo --> */
 .container.teams_logo{
     display: flex;
 
@@ -198,18 +204,55 @@ nav.plans{
     }
 }
 
+div.banner_dpbx_business{
+    display: flex;
+    justify-content: center;
+
+    & .container_sm.banner_dpbx_business{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        & .title_banner{
+            font-size: 2.5rem;
+            width: auto;
+        }
+
+        & .button_banner{
+            font-size: 1rem;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+
+            & input{
+                padding: 0 6rem;
+                font-size: 1.75rem;
+                height: 4rem;
+                border: none;
+                background-color: lightgrey;
+                margin-bottom: 5rem;
+            }
+        }
+    }    
+}
+
+/* <!-- #endregion containter_team_logo --> */
+
+/* <!-- #region container_faq --> */
 .faq_row.r0{
     width: 60%;
     font-size: 1.5rem;
     text-align: center;
+    margin-top: 15rem;
 }
 
 .container.faq{
     width: 52%;
     display: flex;
     align-self: center;
-    margin-top: 15rem;
     flex-direction: column;
+    margin-top: 5rem;
 
     & div{
         display: flex;
@@ -222,13 +265,36 @@ nav.plans{
 
     & .r3{
         border-bottom: 1px solid grey;
-    }
-
-    
+    }    
 }
 
 h1.faq{
     align-self: center;
+}
+/* <!-- #endregion container_faq --> */
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 20rem;
+
+    & .nav_container{
+        width: 70%;
+        display: flex;
+    }
+    
+    & nav{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    & ul{
+        list-style: none;
+        padding: 0;
+    }
 }
 
 /* #region DEBUG */
@@ -276,5 +342,15 @@ h1.faq{
 
 .debug .banner_dpbx_business{
     background-color: lightblue;
+    height: 600px;
+}
+
+.debug .container_sm.banner_dpbx_business{
+    background-color: crimson;
+}
+
+
+.debug footer{
+    background-color: black;
     height: 600px;
 }
