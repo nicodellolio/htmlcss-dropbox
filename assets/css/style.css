@@ -85,6 +85,7 @@ main{
     margin-top: 10rem;
 }
 
+
 /* #endregion jumbotron */
 
 .container.plan_business{
@@ -116,6 +117,43 @@ nav.plans{
     text-align: center;
 }
 
+.container.partnership{
+    width: 60%;
+    display: flex;
+    /* justify-content: center; */
+    align-self: center;
+    margin-top: 20rem;
+
+    & .textbox_partnership{
+        width: 25%;
+        margin: 0 5rem;
+        flex-grow: 1;
+    }
+
+    & img{
+        flex-grow: 2;
+    }
+}
+
+.container.dropbox_business{
+    width: 60%;
+    align-self: center;
+    
+    & .cards_container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+    & .business_card{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+}
+
 /* #region DEBUG */
 .debug .plan_business{
     background-color: yellow;
@@ -140,4 +178,17 @@ nav.plans{
 .debug .spot_enterprice_head{
     height: 4rem;
     border: 1px solid black;
+}
+
+.debug .container.partnership{
+    /* height: 1300px; */
+    background-color: olive
+}
+
+.debug .container.partnership div{
+    background-color: teal;
+}
+
+.debug .container.dropbox_business{
+    background-color: silver;
 }
