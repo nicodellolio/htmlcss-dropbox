@@ -27,6 +27,10 @@ header>div{
 .logo{
     width: 12rem;
 }
+
+.banner_dpbx_business{
+    width: 100%;
+}
 /* #endregion header */
 
 /* #region main */
@@ -192,8 +196,39 @@ nav.plans{
     & .designit_block img{
         width: 100%;
     }
+}
 
+.faq_row.r0{
+    width: 60%;
+    font-size: 1.5rem;
+    text-align: center;
+}
 
+.container.faq{
+    width: 52%;
+    display: flex;
+    align-self: center;
+    margin-top: 15rem;
+    flex-direction: column;
+
+    & div{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 800;
+        font-size: 1.5rem;
+        padding: 3rem 0;
+        border-top: 1px solid grey;
+    }
+
+    & .r3{
+        border-bottom: 1px solid grey;
+    }
+
+    
+}
+
+h1.faq{
+    align-self: center;
 }
 
 /* #region DEBUG */
@@ -237,4 +272,9 @@ nav.plans{
 
 .debug .team_logo_overture{
     background-color: hotpink;
+}
+
+.debug .banner_dpbx_business{
+    background-color: lightblue;
+    height: 600px;
 }
