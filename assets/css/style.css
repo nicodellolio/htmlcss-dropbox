@@ -81,6 +81,7 @@ main{
 .jumbotron input{
     background-color: #0061ffFF;
     color: #fff;
+    border: none;
     padding: 1rem 2rem;
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
@@ -158,11 +159,9 @@ nav.plans{
 .plans_head{
     max-height: 3rem;
     text-align: center;
-    width: 100%;
     line-height: 3;
     border-bottom: 1px solid lightgray;
     padding-left: 1rem;
-    margin-left: -1rem;
 }
 
 .spot_enterprise{
