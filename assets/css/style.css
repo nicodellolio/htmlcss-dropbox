@@ -127,7 +127,7 @@ nav.plans{
             color: #fff;
             padding: 1rem 2rem;
             font-size: 1.25rem;
-            margin: 2rem 0 1.5rem 0;
+            margin: 2rem 0 1.5rem -1rem;
         }
 
         & div.divider{
@@ -143,6 +143,10 @@ nav.plans{
         flex-direction: column;
         gap: 0.75rem;
     }
+}
+
+.column.professional{
+    padding-bottom: 10.65rem;
 }
 
 .column.advanced{
@@ -207,7 +211,7 @@ nav.plans{
         width: 34%;
         margin: 2rem 3rem;
 
-        & input{rem
+        & input{
             border: 1px solid #707070;
             background-color: #fff;
             font-size: 1.25rem;
@@ -219,8 +223,6 @@ nav.plans{
     & img{
         width: 66%;    
     }
-
-    
 }
 /* <!-- #endregion container_partnership --> */
 
@@ -228,9 +230,13 @@ nav.plans{
 .container.dropbox_business{
     width: 60%;
     align-self: center;
-    margin-top: 20rem;
+    margin-top: 12rem;
     font-size: 1rem;
     
+    & .title{
+        font-size: 1.5rem;
+    }
+
     & .cards_container{
         width: 100%;
         display: flex;
@@ -242,6 +248,11 @@ nav.plans{
         display: flex;
         flex-direction: column;
         width: 30%;
+        margin-top: 3rem;
+
+        & h2{ 
+            margin-bottom: 0;
+        }
     }
 }
 /* <!-- #endregion containter_dropbox_business --> */
@@ -251,20 +262,15 @@ nav.plans{
     width: 60%;
     display: flex;
     align-self: center;
-    margin-top: 20rem ;
+    margin-top: 8rem ;
 
     & .container_sm{
-        width: 60%;
+        width: 65%;
     }
 
     & h1{
         font-size: 3rem;
-        margin-bottom: 5rem;
-    }
-
-    & a{
-        margin-top: 7rem;
-        background-color: yellow;
+        margin-bottom: 3rem;
     }
 }
 /* !-- #endregion containter_team_logo_overture --> */
@@ -272,20 +278,60 @@ nav.plans{
 /* <!-- #region containter_team_logo --> */
 .container.teams_logo{
     display: flex;
+    margin-top: 10rem;
 
     & div{
         flex-grow: 1;
+        max-width: 33.3%;
+    }
+
+    & .four_block{
+        max-height: 636px;
+        display: flex;
         flex-wrap: wrap;
-        width: 33.3%;
-        margin-top: 20rem;
+
+        & .logo{
+            min-width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            aspect-ratio: 1;
+
+            & img{
+                width: 60%;
+                color: #fff;
+                filter: invert(100%);
+            }
+        }
+
+        & .logo.top-left{
+            box-sizing: border-box;
+            background-color: #a2d39bFF;
+            border: 1px solid #d1e9cd;
+        }
+
+        & .logo.top-right{
+            background-color: #61082bFF;
+        }
+
+        & .logo.bottom-left{
+            background-color: #0093ceFF;
+            align-items: center;
+        }
+
+        & .logo.bottom-right{
+            background-color: #ff1c1cFF;
+        }
+
     }
 
-    & .four_block img{
-        width: 49.8%;
-    }
+    & .designit_block{
+        background-color: #f5f5f5FF;
 
-    & .designit_block img{
-        width: 100%;
+        & img{
+        width: 60%;
+        padding: 3.5rem;
+        }
     }
 }
 
