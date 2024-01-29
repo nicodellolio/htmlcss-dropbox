@@ -124,10 +124,12 @@ nav.plans{
 
         & input{
             background-color: #0061ffFF;
+            max-width: 19rem;
             color: #fff;
-            padding: 1rem 2rem;
+            border: none;
+            padding: 1rem;
             font-size: 1.25rem;
-            margin: 2rem 0 1.5rem -1rem;
+            margin: 2rem 1rem 1rem 1rem;
         }
 
         & div.divider{
@@ -191,6 +193,7 @@ nav.plans{
         & input{
             background-color: #0061ffFF;
             color: #fff;
+            border: none;
             padding: 1rem 2rem;
             font-size: 1.25rem;
             margin: 2rem 0 1.5rem 0;
@@ -198,7 +201,6 @@ nav.plans{
     }
 }
 /* <!-- #endregion container_plan_business --> */
-
 
 /* <!-- #region container_partnership --> */
 .container.partnership{
@@ -307,7 +309,7 @@ nav.plans{
         & .logo-left.top-left{
             box-sizing: border-box;
             background-color: #a2d39bFF;
-            border: 1px solid #d1e9cd;
+            border: 1rem solid #d1e9cd;
         }
     
         & .logo-left.top-right{
@@ -326,7 +328,7 @@ nav.plans{
         /* Right Side Logos */
         & .logo-right.top-left{
             box-sizing: border-box;
-            background-color: #d5001fFF;F;
+            background-color: #d5001fFF;
         }
     
         & .logo-right.top-right{
@@ -373,31 +375,32 @@ div.banner_dpbx_business{
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #b4d0e7;
+    padding: 3.5rem 0;
 
     & .container_sm.banner_dpbx_business{
-        width: 60%;
+        width: 55%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         
         & .title_banner{
-            font-size: 2.5rem;
+            font-size: 1.25rem;
             width: auto;
         }
 
         & .button_banner{
-            font-size: 1rem;
             width: 80%;
             display: flex;
-            justify-content: center;
+            justify-content: end;
+            align-items: center;
 
             & input{
-                padding: 0 6rem;
-                font-size: 1.75rem;
-                height: 4rem;
+                padding: 0.75rem 3rem;
+                font-size: 1.25rem;
                 border: none;
-                background-color: lightgrey;
-                margin-bottom: 5rem;
+                box-shadow: none;
+                background-color: #f5f5f5;
             }
         }
     }    
@@ -407,25 +410,25 @@ div.banner_dpbx_business{
 
 /* <!-- #region container_faq --> */
 .faq_row.r0{
-    width: 60%;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 15rem;
+    width: 55%;
+    font-size: 1.25rem;
+    margin: auto;
+    margin-top: 8rem;
 }
 
 .container.faq{
-    width: 52%;
+    width: 55%;
     display: flex;
     align-self: center;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 3rem;
 
     & div{
         display: flex;
         justify-content: space-between;
         font-weight: 800;
-        font-size: 1.5rem;
-        padding: 3rem 0;
+        font-size: 1.25rem;
+        padding: 2rem 0;
         border-top: 1px solid grey;
     }
 
@@ -433,17 +436,14 @@ div.banner_dpbx_business{
         border-bottom: 1px solid grey;
     }    
 }
-
-h1.faq{
-    align-self: center;
-}
 /* <!-- #endregion container_faq --> */
 
 footer{
     display: flex;
     justify-content: center;
+    background-color: #000;
     color: #fff;
-    margin-top: 20rem;
+    margin-top: 12rem;
 
     & .nav_container{
         width: 70%;
@@ -454,69 +454,37 @@ footer{
         flex-grow: 1;
         display: flex;
         flex-direction: column;
+        align-items: center;
         text-align: left;
+        line-height: 2.5;
+
+        & .nav_title{
+            width: 100%;
+            margin-left: 6rem;
+        }
     }
 
     & ul{
         list-style: none;
         padding: 0;
     }
+
 }
 
-/* #region DEBUG */
-.debug .plan_business{
-    background-color: yellow;
-    height: 5%;
-}
-
-.debug nav.plans{
-    height: 2000px;
-}
-
-.debug nav.plans div{
-    flex-basis: 1800px;
-    background-color: cadetblue;
-    border: 1px solid black;
-}
-
-.debug .spot.enterprise{
-    height: 500px;
-    border: 1px solid black;
-}
-
-.debug .spot_enterprice_head{
-    height: 4rem;
-    border: 1px solid black;
-}
-
-.debug .container.partnership{
-    /* height: 1300px; */
-    background-color: olive
-}
-
-.debug .container.partnership div{
-    background-color: teal;
-}
-
-.debug .container.dropbox_business{
-    background-color: silver;
-}
-
-.debug .team_logo_overture{
-    background-color: hotpink;
-}
-
-.debug .banner_dpbx_business{
-    background-color: lightblue;
-    height: 600px;
-}
-
-.debug .container_sm.banner_dpbx_business{
-    background-color: crimson;
-}
-
-
-.debug footer{
+.footer_closure{
+    width: 100%;
     background-color: black;
-    height: 600px;
+    padding: 3rem 0 7rem 3rem;
+
+    & .footer_divider{
+        width: 8%;
+        height: 2px;
+        background-color: rgb(208, 208, 208);
+        margin: 2rem 0 0 18rem
+    }
+
+    & .language{
+        color: lightgray;
+        padding: 3rem 0 0 0;
+    }
 }
