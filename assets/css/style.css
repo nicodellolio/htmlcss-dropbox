@@ -290,7 +290,7 @@ nav.plans{
         display: flex;
         flex-wrap: wrap;
 
-        & .logo {
+        & .logo-left, .logo-right {
             min-width: 50%;
             height: 50%;
             display: flex;
@@ -303,24 +303,42 @@ nav.plans{
                 filter: invert(100%);
             }
         }
-           
-            & .logo.top-left{
+        /* Left Side Logos  */
+        & .logo-left.top-left{
             box-sizing: border-box;
             background-color: #a2d39bFF;
             border: 1px solid #d1e9cd;
         }
     
-        & .logo.top-right{
+        & .logo-left.top-right{
             background-color: #61082bFF;
         }
     
-        & .logo.bottom-left{
+        & .logo-left.bottom-left{
             background-color: #0093ceFF;
             align-items: center;
         }
     
-        & .logo.bottom-right{
+        & .logo-left.bottom-right{
             background-color: #ff1c1cFF;
+        }
+
+        /* Right Side Logos */
+        & .logo-right.top-left{
+            box-sizing: border-box;
+            background-color: #d5001fFF;F;
+        }
+    
+        & .logo-right.top-right{
+            background-color: #b4d0e7;
+        }
+    
+        & .logo-right.bottom-left{
+            background-color: #0d2481;
+        }
+    
+        & .logo-right.bottom-right{
+            background-color: #ffd830;
         }
     }
     
@@ -348,6 +366,7 @@ nav.plans{
         }
     }
 }
+
 
 
 div.banner_dpbx_business{
